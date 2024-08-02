@@ -1,0 +1,41 @@
+{
+	"name": "test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsnd --watch --respawn --transpile-only src/server.ts",
+		"build": "pnpx tsc",
+		"ci": "pnpm install --frozen-lockfile",
+		"typeorm": "typeorm-ts-node-commonjs"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@eslint/js": "^9.8.0",
+		"@types/cors": "^2.8.17",
+		"@types/eslint__js": "^8.42.3",
+		"@types/express": "^4.17.21",
+		"@types/jsonwebtoken": "^9.0.6",
+		"@types/node": "^22.1.0",
+		"@types/pg": "^8.11.6",
+		"eslint": "9.x",
+		"globals": "^15.8.0",
+		"reflect-metadata": "^0.2.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^7.17.0"
+	},
+	"dependencies": {
+		"@types/bcryptjs": "^2.4.6",
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"jsonwebtoken": "^9.0.2",
+		"pg": "^8.12.0",
+		"typedi": "^0.10.0",
+		"typeorm": "^0.3.20"
+	}
+}
